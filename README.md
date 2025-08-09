@@ -22,61 +22,24 @@
 | Python     | Utility Scripts/Modules   |
 | HTML, CSS  | Web Structure & Styling   |
 | Maven      | Dependency Management     |
-| MySQL      | Database (suggested)      |
-## Project Structure
-```plaintext
-Angular-Spring-boot-Smart-Healthcare-System/
-├── Doctor/
-│   ├── app.py
-│   ├── requirements.txt
-│   ├── Testing.csv
-│   ├── Training.csv
-│   ├── static/
-│   │   ├── styles.css
-│   │   └── images/
-│   │       └── healthcare-bg.jpg
-│   └── templates/
-│       └── index.html
-├── Smart-Health-Care-System-main/
-│   ├── PROJECT_DOCUMENTATION.md
-│   ├── project.txt
-│   ├── New folder/
-│   │   └── frontend/
-│   └── SmartHealthcareSystem-Backend/
-│       ├── .classpath
-│       ├── .factorypath
-│       ├── .project
-│       ├── HELP.md
-│       ├── mvnw
-│       ├── mvnw.cmd
-│       ├── pom.xml
-│       ├── .settings/
-│       ├── src/
-│       │   ├── main/
-│       │   │   ├── java/com/application/
-│       │   │   │   ├── config/
-│       │   │   │   ├── controller/
-│       │   │   │   │   ├── DoctorController.java
-│       │   │   │   │   ├── LoginController.java
-│       │   │   │   │   ├── RegistrationController.java
-│       │   │   │   │   ├── UserController.java
-│       │   │   │   │   └── # Code Citations.md
-│       │   │   │   ├── filter/
-│       │   │   │   ├── model/
-│       │   │   │   ├── repository/
-│       │   │   │   ├── service/
-│       │   │   │   ├── util/
-│       │   │   │   └── HealthcareManagementBackendApplication.java
-│       │   │   └── resources/
-│       │   └── test/
-│       │       └── java/com/application/
-│       └── target/
-├── package-lock.json
-├── README.md
-```
-## Getting Started
-### Prerequisites
-- Node.js & npm (for Angular)
-- Java JDK 8+ (for Spring Boot)
-- Maven (for managing Java dependencies)
-- MySQL or another SQL-compatible database
+
+## Usage
+
+- Access the application at `http://localhost:4200` after running both backend and frontend services.
+- Register or log in as a doctor, patient, or admin depending on your access level.
+
+## Contribution
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature/YourFeature`).
+3. Commit your changes (`git commit -am 'Add new feature'`).
+4. Push to the branch (`git push origin feature/YourFeature`).
+5. Open a Pull Request.
+
+## License
+
+This project is MIT Licensed.
+
+## Contact
+
+For queries or suggestions, contact [Rakesh161rausahn](https://github.com/Rakesh161rausahn).
