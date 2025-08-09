@@ -22,24 +22,44 @@
 | Python     | Utility Scripts/Modules   |
 | HTML, CSS  | Web Structure & Styling   |
 | Maven      | Dependency Management     |
+## Installation Steps
 
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/Rakesh161rausahn/Angular-Spring-boot-Smart-Healthcare-System.git
+   cd Angular-Spring-boot-Smart-Healthcare-System
+   ```
+2. **Install Angular Dependencies**
+   ```sh
+   cd Smart-Health-Care-System-main/New\ folder/frontend
+   npm install
+   ```
+3. **Install Backend Dependencies**
+   ```sh
+   cd ../../SmartHealthcareSystem-Backend
+   mvn clean install
+   ```
+4. **Configure Database**
+   - Update `application.properties` in the Spring Boot backend module with your MySQL credentials.
+5. **Run Backend**
+   ```sh
+   mvn spring-boot:run
+   ```
+6. **Run Frontend**
+   ```sh
+   cd ../../New\ folder/frontend
+   ng serve --open
+   ```
 ## Usage
-
 - Access the application at `http://localhost:4200` after running both backend and frontend services.
 - Register or log in as a doctor, patient, or admin depending on your access level.
-
 ## Contribution
-
 1. Fork the repository.
 2. Create a feature branch (`git checkout -b feature/YourFeature`).
 3. Commit your changes (`git commit -am 'Add new feature'`).
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Open a Pull Request.
-
 ## License
-
 This project is MIT Licensed.
-
 ## Contact
-
 For queries or suggestions, contact [Rakesh161rausahn](https://github.com/Rakesh161rausahn).
