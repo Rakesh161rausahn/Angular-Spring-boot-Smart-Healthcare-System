@@ -25,10 +25,54 @@
 | MySQL      | Database (suggested)      |
 ## Project Structure
 ```plaintext
-/
-├── Doctor/                        # Doctor-specific modules
-├── Smart-Health-Care-System-main/ # Main backend and Angular source
-├── package-lock.json              # Node.js dependency lockfile
+Angular-Spring-boot-Smart-Healthcare-System/
+├── Doctor/
+│   ├── app.py
+│   ├── requirements.txt
+│   ├── Testing.csv
+│   ├── Training.csv
+│   ├── static/
+│   │   ├── styles.css
+│   │   └── images/
+│   │       └── healthcare-bg.jpg
+│   └── templates/
+│       └── index.html
+├── Smart-Health-Care-System-main/
+│   ├── PROJECT_DOCUMENTATION.md
+│   ├── project.txt
+│   ├── New folder/
+│   │   └── frontend/
+│   └── SmartHealthcareSystem-Backend/
+│       ├── .classpath
+│       ├── .factorypath
+│       ├── .project
+│       ├── HELP.md
+│       ├── mvnw
+│       ├── mvnw.cmd
+│       ├── pom.xml
+│       ├── .settings/
+│       ├── src/
+│       │   ├── main/
+│       │   │   ├── java/com/application/
+│       │   │   │   ├── config/
+│       │   │   │   ├── controller/
+│       │   │   │   │   ├── DoctorController.java
+│       │   │   │   │   ├── LoginController.java
+│       │   │   │   │   ├── RegistrationController.java
+│       │   │   │   │   ├── UserController.java
+│       │   │   │   │   └── # Code Citations.md
+│       │   │   │   ├── filter/
+│       │   │   │   ├── model/
+│       │   │   │   ├── repository/
+│       │   │   │   ├── service/
+│       │   │   │   ├── util/
+│       │   │   │   └── HealthcareManagementBackendApplication.java
+│       │   │   └── resources/
+│       │   └── test/
+│       │       └── java/com/application/
+│       └── target/
+├── package-lock.json
+├── README.md
 ```
 ## Getting Started
 ### Prerequisites
