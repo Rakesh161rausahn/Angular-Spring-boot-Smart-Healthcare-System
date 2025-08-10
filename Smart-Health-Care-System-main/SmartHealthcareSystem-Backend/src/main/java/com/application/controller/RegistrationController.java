@@ -29,39 +29,34 @@ public class RegistrationController
 	
 	@PostMapping("/registeruser")
 	@CrossOrigin(origins = "http://localhost:4200")
-	public User registerUser(@RequestBody User user) throws Exception
+	public ResponseEntity<?> registerUser(@RequestBody User user)
 	{
 		String currEmail = user.getEmail();
-		if(currEmail != null || !"".equals(currEmail))
-		{
-			User userObj = userRegisterService.fetchUserByEmail(currEmail);
-			if(userObj != null)
-			{
-				throw new Exception("User with "+currEmail+" already exists !!!");
+		if(currEmail != null && !currEmail.trim().isEmpty()) {
+			User existing = userRegisterService.fetchUserByEmail(currEmail);
+			if(existing != null) {
+				return ResponseEntity.status(HttpStatus.CONFLICT)
+						.body("User with email "+currEmail+" already exists");
 			}
 		}
-		System.out.println("here");
-		User userObj = null;
-		userObj = userRegisterService.saveUser(user);
-		return userObj;
+		User saved = userRegisterService.saveUser(user);
+		return ResponseEntity.status(HttpStatus.CREATED).body(saved);
 	}
 	
 	@PostMapping("/registerdoctor")
 	@CrossOrigin(origins = "http://localhost:4200")
-	public Doctor registerDoctor(@RequestBody Doctor doctor) throws Exception
+	public ResponseEntity<?> registerDoctor(@RequestBody Doctor doctor)
 	{
 		String currEmail = doctor.getEmail();
-		if(currEmail != null || !"".equals(currEmail))
-		{
-			Doctor doctorObj = doctorRegisterService.fetchDoctorByEmail(currEmail);
-			if(doctorObj != null)
-			{
-				throw new Exception("Doctor with "+currEmail+" already exists !!!");
+		if(currEmail != null && !currEmail.trim().isEmpty()) {
+			Doctor existing = doctorRegisterService.fetchDoctorByEmail(currEmail);
+			if(existing != null) {
+				return ResponseEntity.status(HttpStatus.CONFLICT)
+						.body("Doctor with email "+currEmail+" already exists");
 			}
 		}
-		Doctor doctorObj = null;
-		doctorObj = doctorRegisterService.saveDoctor(doctor);
-		return doctorObj;
+		Doctor saved = doctorRegisterService.saveDoctor(doctor);
+		return ResponseEntity.status(HttpStatus.CREATED).body(saved);
 	}
 	
 	@PostMapping("/addDoctor")

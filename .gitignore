@@ -1,0 +1,19 @@
+# Root ignore
+# Backend build artifacts
+Smart-Health-Care-System-main/SmartHealthcareSystem-Backend/target/
+
+# Frontend build & deps
+Smart-Health-Care-System-main/SmartHealthCareSystem-main/node_modules/
+Smart-Health-Care-System-main/SmartHealthCareSystem-main/dist/
+
+# Duplicate old frontend (optional)
+Smart-Health-Care-System-main/New folder/
+
+# IDE/editor
+.vscode/
+*.iml
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
