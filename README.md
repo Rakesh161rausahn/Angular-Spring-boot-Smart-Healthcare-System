@@ -71,7 +71,7 @@ Backend starts on: http://localhost:8081
 ## 6. Run Angular Frontend (Development)
 Install dependencies (first time):
 ```powershell
-cd "Smart-Health-Care-System-main/SmartHealthCareSystem-main"
+cd "Smart-Health-Care-System-main/SmartHealthCareSystem-Frontend"
 $env:NODE_OPTIONS="--openssl-legacy-provider"   # Only if using Node >=17
 npm install --legacy-peer-deps
 ```
@@ -135,7 +135,7 @@ Open three PowerShell windows (or run sequentially):
    ```
 2. Frontend:
    ```powershell
-   cd "Smart-Health-Care-System-main/SmartHealthCareSystem-main"
+   cd "Smart-Health-Care-System-main/SmartHealthCareSystem-Frontend"
    $env:NODE_OPTIONS="--openssl-legacy-provider"
    npm start
    ```
