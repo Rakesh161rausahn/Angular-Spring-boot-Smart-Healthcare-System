@@ -1,4 +1,4 @@
-# Smart Healthcare System (Angular + Spring Boot + Python AI)
+[# Smart Healthcare System (Angular + Spring Boot + Python AI)
 
 Full-stack healthcare management platform with:
 - Angular 12 Frontend (patient / doctor / admin interfaces)
@@ -207,3 +207,4 @@ If something fails:
 5. Run `mvn clean package` to ensure backend compiles.
 
 Feel free to extend and optimize. Happy coding!
+](https://github.com/Rakesh161rausahn/Angular-Spring-boot-Smart-Healthcare-System.git)
