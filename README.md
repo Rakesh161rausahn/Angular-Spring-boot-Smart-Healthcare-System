@@ -38,11 +38,9 @@ Doctor/                            <- Python AI service
 ## Clone this repository
 
 To get a local copy up and running, run this command:
----bash
-
+```bash
 git clone https://github.com/Rakesh161rausahn/Angular-Spring-boot-Smart-Healthcare-System.git
-
----
+```
 ## 4. Database Setup
 Login to MySQL and create the schema if not present:
 ```sql
