@@ -35,7 +35,12 @@ Smart-Health-Care-System-main/
   SmartHealthCareSystem-main/      <- Angular frontend
 Doctor/                            <- Python AI service
 ```
-(You may safely remove any duplicate / legacy frontend folders named `New folder/frontend`.)
+## Clone this repository
+
+To get a local copy up and running, run this command:
+---bash
+
+git clone https://github.com/Rakesh161rausahn/Angular-Spring-boot-Smart-Healthcare-System.git
 
 ---
 ## 4. Database Setup
